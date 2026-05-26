@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Focus Timer</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<script th:src="@{/js/script.js}"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">FocusFlow</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/tasks">Tasks</a>
+<a href="/focus">Focus</a>
+<a href="/profile">Profile</a>
+</div>
+
+</nav>
+
+<div class="timer">
+
+<h1 id="timer">25:00</h1>
+
+<button class="btn-main" onclick="startTimer()">
+Start Focus
+</button>
+
+</div>
+
+</body>
+</html>
