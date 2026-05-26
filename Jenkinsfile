@@ -2,21 +2,18 @@ pipeline {
 
     agent any
 
-    tools {
-        maven 'Maven'
-    }
-
     stages {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Vedavarshini123/Focusflow.git'
+                git branch: 'main',
+                url: 'https://github.com/Vedavarshini123/Focusflow.git'
             }
         }
 
         stage('Build Application') {
             steps {
-                bat 'mvn clean install'
+                bat 'mvnw.cmd clean package'
             }
         }
 
